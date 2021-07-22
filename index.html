@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Registration Form</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<form  action="/action_page.php">
+<div class="wrapper">
+    <div class="title">
+      OD Application Form
+    </div>
+    <div class="form">
+       <div class="inputfield">
+          <label> Name</label>
+          <input type="text" class="input"   title="only alphabets" required>
+       </div>  
+         
+       
+       <div class="inputfield">
+       <label for="phone">Registration Number</label>
+       <input type="tel"  class="input"
+       pattern="[0-9]{9}" title="9 numbers"
+       required>
+
+</div>
+       <div class="inputfield">
+        <label>Semester</label>
+        <input type="number" class="input" maxlength="1" min="1"  max="8" required>
+     </div>  
+      
+        
+          <div class="inputfield">
+            <label>OD Type</label>
+            <div class="custom_select">
+              <select required>
+                <option value="">Select</option>
+                <option value="normal">Normal OD</option>
+                <option value="special">Special OD</option>
+                </select>
+                </div>
+                </div>
+                <div class="inputfield">
+                    <label> From Date</label>
+                    <input type="date" class="input" required>
+                </div>
+                <div class="inputfield">
+                    <label> To Date</label>
+                    <input type="date" class="input" required>
+                </div>
+        
+                <div class="inputfield">
+                    <label>OD Leave Type</label>
+                    <div class="custom_select">
+                      <select required>
+                        <option value="">Select</option>
+                        <option value="NIT">Visit to NIT for campus</option>
+                        <option value="Sports Week">Sports Week</option>
+                        <option value="Medical Leave">Medical Leave</option>
+                        <option value="Placement">Placement</option>
+                        <option value="Other">Other</option>
+                        </select>
+                        </div>
+                        </div>
+      <div class="inputfield" >
+          <label>Reason</label>
+          <textarea class="textarea" required></textarea>
+       </div> 
+     
+      <div class="inputfield">
+        <input type="submit" value="Apply OD" class="btn">
+      </div>
+    </div>
+</div>	
+</form>	
+</body>
+</html>
